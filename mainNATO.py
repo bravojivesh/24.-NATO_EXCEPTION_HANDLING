@@ -5,7 +5,6 @@ data1=pd.read_csv("nato_phonetic_alphabet.csv")
 df1=pandas.DataFrame(data1)
 df1_iter=df1.iterrows()
 
-# print (df1_iter)
 
 dict={row.letter:row.code for (ind,row) in df1_iter}
 # print(dict)
